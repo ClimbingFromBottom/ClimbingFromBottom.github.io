@@ -14,16 +14,6 @@ body {
   color: black;
 }
 
-.learning-page {
-  background-color: white;
-  color: black;
-}
-
-.challenges-page {
-  background-color: black;
-  color: white;
-}
-
 h1 {
   font-family: 'Londrina Solid', cursive;
   font-size: 4em;
@@ -49,29 +39,6 @@ img {
   cursor: pointer;
 }
 
-.learning-page .menu-links {
-  text-decoration: none;
-  color: black;
-}
-
-.learning-page .menu-links:hover {
-  text-decoration: none;
-  background-color: black;
-  color: white;
-}
-
-
-.challenges-page .menu-links {
-  text-decoration: none;
-  color: white;
-}
-
-.challenges-page .menu-links:hover {
-  text-decoration: none;
-  background-color: white;
-  color: black;
-}
-
 /* blinking cursor */
 #cursor {
   display: inline-block;
@@ -87,7 +54,9 @@ img {
   100% {background: black}
 }
 
-/* #### Logo Transition ####*/
+/* ################################### */
+/* ######### Logo Transition ######### */
+/* ################################### */
 #svg-transition-in {
   z-index: 100;
   position: absolute;
@@ -109,30 +78,7 @@ img {
 #svg-transition-in.transition {
   -webkit-transform: scale(1);
 }
-
-#svg-transition-out {
-  z-index: 10;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transform-origin: 52.5% 37%;
-  -webkit-transform: scale(100);
-  
-  /*Animations*/
-  -webkit-transition: 5s ease-out;
-
-  /*-moz-transition: 5s;
-  -o-transition: 5s;
-  transition: 5s;*/
-}
-
-#svg-transition-out.transition {
-  -webkit-transform: scale(0);
-}
-/* ######################### */
+/* ################################### */
 
 #top-btn {
   display: none;
@@ -171,34 +117,6 @@ img {
   text-decoration: none;
   background-color: black;
   color: white;
-}
-
-.key-field {
-  flex-grow:1;
-}
-
-.chall {
-  border: solid white 2px;
-  border-radius: 10px;
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  color: white;
-  align-items: center;
-  cursor: pointer;
-}
-
-.chall img {
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 0px;
-  margin-right: 10px;
-}
-
-.chall:hover {
-  background-color: white;
-  color: black;
 }
 
 #fiches-box {
@@ -306,100 +224,6 @@ border-color: transparent #000 transparent transparent;
 .fsm:hover img{
   margin: 0px;
   width: 110px;
-}
-
-.learning-page .fsm {
-  filter: invert(1);
-}
-
-.modal-content {
-  color: black;
-  font-size: 1.5em;
-  border: solid white 2px;
-}
-
-.modal-title{
-  font-family: 'Londrina Solid', cursive;
-  font-size: 2em;
-}
-
-.modal-header, .modal-footer{
-  background-color: black;
-  color: white;
-  text-align: center;
-  border: 0px;
-}
-
-.modal-header .close {
-  margin: 0;
-  float: right;
-  opacity: 1;
-  padding: 0px;
-}
-
-.modal-header .close:hover {
-  opacity: 0.5;
-}
-
-.modal-body {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  border: solid black 4px;
-}
-
-.key-field.invalid {
-    border: solid coral 3px;
-    border-radius: 5px;
-    /* also need animation and -moz-animation */
-    -webkit-animation: shake .5s linear;
-}
-
-/* also need keyframes and -moz-keyframes */
-@-webkit-keyframes shake {
-    8%, 41% {
-        -webkit-transform: translateX(-10px);
-    }
-    25%, 58% {
-        -webkit-transform: translateX(10px);
-    }
-    75% {
-        -webkit-transform: translateX(-5px);
-    }
-    92% {
-        -webkit-transform: translateX(5px);
-    }
-    0%, 100% {
-        -webkit-transform: translateX(0);
-    }
-}
-
-
-/* ################################### */
-
-/* ################################### */
-/* ###### CSS for the Menu page ###### */
-/* ################################### */
-
-.menu-learning, .menu-challenges {
-  position: relative;
-  border-radius: 10px;
-  width: 300px;
-  padding: 30px;
-  margin: 10px;
-  cursor: pointer;
-}
-
-.menu-learning {
-  border: solid black 2px;
-  background-color: white;
-  color: black;
-
-}
-
-.menu-challenges {
-  border: solid black 2px;
-  background-color: black;
-  color: white;
 }
 
 /* ################################### */

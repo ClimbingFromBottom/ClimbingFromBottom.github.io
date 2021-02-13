@@ -6,6 +6,8 @@ function pageTransitionIn(logo, redirect) {
   $('body').append(svg);
   svg.classList.add('transition');
   
+  document.body.style.overflow = "hidden";
+  
   window.setTimeout(function () {
 		window.location.replace(redirect);
 	}, 2000);

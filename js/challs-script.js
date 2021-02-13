@@ -5,7 +5,7 @@ function checkKey(cat, chall) {
   filepath = "https://raw.githubusercontent.com/ClimbingFromBottom/ClimbingFromBottom.github.io/main/challenge-files/" + cat + "/" + chall + "/key.json";
 
   $.get(filepath, function(json) {
-	  var key = JSON.parse(eval(json)).key;
+  	var key = JSON.parse(eval(json)).key;
     if(sha1(input.value) == key){
       var modal = document.getElementById(chall).childNodes; // modal
       var tmp = modal[1].childNodes; // modal-dialog

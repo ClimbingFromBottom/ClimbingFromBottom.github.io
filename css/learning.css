@@ -1,3 +1,31 @@
+/* ################################### */
+/* ### CSS of the Learning section ### */
+/* ################################### */
+.learning-page {
+  background-color: white;
+  color: black;
+}
+
+.learning-page .menu-links {
+  text-decoration: none;
+  color: black;
+}
+
+.learning-page .menu-links:hover {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+.learning-page .fsm {
+  filter: invert(1);
+}
+
+/* ################################### */
+
+/* ################################### */
+/* ### CSS of the Markdown section ### */
+/* ################################### */
 .content {
   display: none;
   font-size: 1.2em;
@@ -163,3 +191,5 @@
     content: '#';
     margin-right: 10px;
 }
+
+/* ################################### */
